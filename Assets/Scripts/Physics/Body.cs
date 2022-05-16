@@ -29,6 +29,7 @@ public class Body : MonoBehaviour
     public Vector2 acceleration { get; set; } = Vector2.zero;
 
     public float drag { get; set; } = 0;
+    public float restitution { get; set; } = 0.75f;
     public float mass => shape.mass;
     public float inverseMass { get => (mass == 0 || bodyType != eBodyType.Dynamic) ? 0 : 1 / mass; }
 

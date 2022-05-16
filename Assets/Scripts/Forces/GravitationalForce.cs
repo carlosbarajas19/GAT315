@@ -8,6 +8,8 @@ public class GravitationalForce : Force
 
     public override void ApplyForce(List<Body> bodies)
     {
+        if (gravitation.value == 0) return;
+
         for (int i = 0; i < bodies.Count; i++)
         {
             for (int j = 0; j < bodies.Count; j++)

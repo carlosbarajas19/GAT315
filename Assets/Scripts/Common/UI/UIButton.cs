@@ -22,7 +22,7 @@ public class UIButton : MonoBehaviour
 
 	private void Awake()
 	{
-		button.onClick.AddListener(OnEvent);
+		//button.onClick.AddListener(OnEvent);
 	}
 
 	private void OnEvent()
